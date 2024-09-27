@@ -46,7 +46,7 @@ public class Main {
 				p.usaElementi(in, flag, 4);
 				break;
 			case 0:
-				flag=true;
+				flag = true;
 				break;
 			default:
 				System.out.println("Opzione non consentita!");
