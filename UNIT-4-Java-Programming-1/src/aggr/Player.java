@@ -47,15 +47,9 @@ public class Player {
 	}
 
 
-
-
-
 	public ArrayList<ElementoMultimediale> getElementi() {
 		return elementi;
 	}
-
-
-
 
 	public void printElements() {
 		int i = 1;
@@ -154,13 +148,5 @@ public class Player {
 		}
 
 	}
-
-
-
-
-
-
-
-
 
 }
