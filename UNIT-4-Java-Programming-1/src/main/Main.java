@@ -47,6 +47,7 @@ public class Main {
 				break;
 			case 0:
 				flag = true;
+				System.out.println("Arrivederci!");
 				break;
 			default:
 				System.out.println("Opzione non consentita!");
