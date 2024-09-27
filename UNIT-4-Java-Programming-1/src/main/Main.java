@@ -47,10 +47,12 @@ public class Main {
 				+ "0)Esci";
 
 		boolean flag = false;
+		System.out.println("Dovrai aggiungere 5 elementi all'interno del player prima di poterlo usare!!!\n".toUpperCase());
+		
 		do {
 			System.out.println(questions);
 			p.aggiungiElemento(in, Integer.parseInt(in.nextLine()), flag);
-		}while(p.getElementi().size() < 5 && !flag);
+		}while(p.getElementi().size() < 5);
 
 		flag = false;
 
