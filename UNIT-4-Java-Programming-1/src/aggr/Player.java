@@ -31,20 +31,27 @@ public class Player {
 				titolo = in.nextLine();
 				System.out.println("Inserisci la durata del video");
 				durata = Integer.parseInt(in.nextLine());
-				this.elementi.add(new Video(titolo, durata));
+				if(durata >= 0) {
+					this.elementi.add(new Video(titolo, durata));
+				}else {
+					System.out.println("Non puoi aggiungere un video con una durata negativa");
+				}
 				break;
 			case 3: 
 				System.out.println("Inserisci il titolo dell'Audio");
 				titolo = in.nextLine();
 				System.out.println("Inserisci la durata dell'Audio");
+				
 				durata = Integer.parseInt(in.nextLine());
-				this.elementi.add(new Audio(titolo, durata));
-				break;
-			case 0: 
-				flag = true;
+				if(durata >= 0 ) {
+					this.elementi.add(new Audio(titolo, durata));
+				}else {
+					System.out.println("Non puoi instanziare questo Audio , durata negativa!");
+				}
+				
 				break;
 			default:
-				System.out.println("Opzione non disponibile");
+				System.out.println("Opzione non disponibile, riprova!");
 			}
 		}catch(Exception e) {
 			System.out.println("errore: " + e.getMessage());
@@ -152,7 +159,6 @@ public class Player {
 						System.out.println("Scelta invalida!");
 					}
 				}while(!flag);
-
 			}
 		}catch(NumberFormatException e) {
 			System.out.println(e.getMessage());
