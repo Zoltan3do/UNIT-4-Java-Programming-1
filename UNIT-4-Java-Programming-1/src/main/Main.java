@@ -7,6 +7,7 @@ import aggr.Player;
 public class Main {
 
 	public static void main(String[] args) {
+		
 		Scanner in = new Scanner(System.in);
 		Player p = new Player();
 
@@ -37,10 +38,13 @@ public class Main {
 				break;
 			case 3:
 				p.usaElementi(in, flag, 2);
+				break;
 			case 4:
 				p.usaElementi(in, flag, 3);
+				break;
 			case 5:
 				p.usaElementi(in, flag, 4);
+				break;
 			case 0:
 				flag=true;
 				break;
